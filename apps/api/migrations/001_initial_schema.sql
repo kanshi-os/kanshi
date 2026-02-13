@@ -1,0 +1,14 @@
+-- Database migration template
+-- Kanshi OS
+
+-- Example migration: Create events table
+-- CREATE TABLE events (
+--   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+--   agent_id VARCHAR(255) NOT NULL,
+--   event_type VARCHAR(255) NOT NULL,
+--   payload JSONB NOT NULL,
+--   created_at TIMESTAMP DEFAULT NOW(),
+--   INDEX idx_agent_id (agent_id),
+--   INDEX idx_event_type (event_type),
+--   INDEX idx_created_at (created_at)
+-- );

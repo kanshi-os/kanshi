@@ -1,0 +1,28 @@
+{
+  "name": "@kanshi/logger",
+  "version": "0.1.0",
+  "description": "Structured logging utilities for Kanshi OS",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["kanshi", "logger", "logging"],
+  "author": "Kanshi OS Contributors",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.10.5",
+    "typescript": "5.3.3",
+    "vitest": "1.1.0"
+  }
+}

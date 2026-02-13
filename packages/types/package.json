@@ -1,0 +1,26 @@
+{
+  "name": "@kanshi/types",
+  "version": "0.1.0",
+  "description": "Shared TypeScript types for Kanshi OS",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["kanshi", "types", "agent", "event"],
+  "author": "Kanshi OS Contributors",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.10.5",
+    "typescript": "5.3.3"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@kanshi/sdk",
+  "version": "0.1.0",
+  "description": "Client SDK for Kanshi OS API",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["kanshi", "sdk", "client"],
+  "author": "Kanshi OS Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "@kanshi/types": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.5",
+    "typescript": "5.3.3",
+    "vitest": "1.1.0"
+  }
+}

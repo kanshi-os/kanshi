@@ -1,0 +1,28 @@
+{
+  "name": "@kanshi/worker",
+  "version": "0.1.0",
+  "description": "Kanshi OS event processing worker",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node --loader tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["kanshi", "worker", "events"],
+  "author": "Kanshi OS Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "@kanshi/types": "workspace:*",
+    "@kanshi/logger": "workspace:*",
+    "@kanshi/policy": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.5",
+    "tsx": "^4.7.0",
+    "typescript": "5.3.3",
+    "vitest": "1.1.0"
+  }
+}

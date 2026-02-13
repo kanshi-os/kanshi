@@ -1,0 +1,11 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+  - 'configs/*'
+
+catalog:
+  '@types/node': '20.10.5'
+  '@types/react': '18.2.45'
+  '@types/react-dom': '18.2.18'
+  zod: '3.22.4'
+  pino: '8.17.2'
